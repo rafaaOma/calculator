@@ -1,0 +1,64 @@
+@using System.Linq.Expressions
+@using NCalc;
+@page "/calculator"
+
+<div class="Calculator">
+    <h3 class="title">Simple Calculator!</h3>
+        <input type="text" class="display" @bind="display" readonly />
+        <div class="buttons">
+            <button class="number" @onclick="() => addNumber('7')">7</button>
+            <button class="number" @onclick="() => addNumber('8')">8</button>
+            <button class="number" @onclick="() => addNumber('9')">9</button>
+            <button class="operation" @onclick="() => addOperation('+')">+</button>
+                @* first row *@
+            <button class="number" @onclick="() => addNumber('4')">4</button>
+            <button class="number" @onclick="() => addNumber('5')">5</button>
+            <button class="number" @onclick="() => addNumber('6')">6</button>
+            <button class="operation" @onclick="() => addOperation('-')">-</button>
+                @* second row *@
+            <button class="number" @onclick="() => addNumber('1')">1</button>
+            <button class="number" @onclick="() => addNumber('2')">2</button>
+            <button class="number" @onclick="() => addNumber('3')">3</button>
+            <button class="operation" @onclick="() => addOperation('*')">x</button>
+                @* third row *@
+            <button class="operation" @onclick="() => clearDisplay()">C</button>
+            <button class="number" @onclick="() => addNumber('0')">0</button>
+            <button class="operation" @onclick="() => calculateResult()">=</button>
+            <button class="operation" @onclick="() => addOperation('/')">/</button>
+                @* fourth row *@
+        </div>
+</div>
+@code{
+    private string display = string.Empty;
+    
+    private void addNumber(char number)
+    {
+        display += number;
+    }
+    private void addOperation(char operation)
+    {
+     display += operation;
+    }
+    private void clearDisplay()
+    {
+        display = "";
+    }
+    private void calculateResult() //calculate the result using NCalc library
+    {
+        if (string.IsNullOrWhiteSpace(display))
+        {
+            display = "E";
+        }
+
+        try
+        {
+            var e=new NCalc.Expression(display);
+            var result = e.Evaluate();
+            display = result.ToString();
+        }
+        catch
+        {
+            display = "Error";
+        }
+    }
+}
