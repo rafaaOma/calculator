@@ -1,9 +1,14 @@
 @using System.Linq.Expressions
 @using NCalc;
+@using System
 @page "/calculator"
-
-<div class="Calculator">
-    <h3 class="title">Simple Calculator!</h3>
+<div class="container">
+     @if (!string.IsNullOrEmpty(erorrMassage)) //checking errorMassage fild has error massage
+    {
+        <div class="error-toast">@erorrMassage</div>
+    }
+    <div class="Calculator">
+        <h3 class="title">Simple Calculator!</h3>
         <input type="text" class="display" @bind="display" readonly />
         <div class="buttons">
             <button class="number" @onclick="() => addNumber('7')">7</button>
@@ -27,10 +32,58 @@
             <button class="operation" @onclick="() => addOperation('/')">/</button>
                 @* fourth row *@
         </div>
+    </div>
 </div>
 @code{
     private string display = string.Empty;
+    private string? erorrMassage;
     
+    private async Task calculateResult()
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(display) ||
+            System.Text.RegularExpressions.Regex.IsMatch(display, @"[+\-*/]{2,}") ||
+            display.StartsWith("+") || display.StartsWith("-") ||
+            display.StartsWith("*") || display.StartsWith("/") ||
+            display.EndsWith("+") || display.EndsWith("-") ||
+            display.EndsWith("*") || display.EndsWith("/")) //chikeing wrong ex with -- or ++ or it ends with - or +
+            {
+              await  ShowError("Invalid expression.");
+                return;
+            }
+            object? result = null;
+        try
+        {
+            var e = new NCalc.Expression(display);
+            result = e.Evaluate();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("NCalc Error: " + ex.Message);
+            await ShowError("Calculation error.\nPlease check your input.");
+            return;
+        }
+
+        display = result?.ToString() ?? "0";
+    }
+     catch (Exception ex)
+    {
+        // أي خطأ عام (خارج NCalc)
+        Console.WriteLine("General Error: " + ex.Message);
+        await ShowError("Unexpected error.\nPlease try again.");
+    }
+    }
+      private async Task ShowError(string message)
+    {
+        erorrMassage = message;
+        StateHasChanged(); // update UI
+
+        await Task.Delay(4000); 
+
+        erorrMassage = null; // hide massage after 2500ms
+       await InvokeAsync(StateHasChanged) ;   
+    }
     private void addNumber(char number)
     {
         display += number;
@@ -42,23 +95,5 @@
     private void clearDisplay()
     {
         display = "";
-    }
-    private void calculateResult() //calculate the result using NCalc library
-    {
-        if (string.IsNullOrWhiteSpace(display))
-        {
-            display = "E";
-        }
-
-        try
-        {
-            var e=new NCalc.Expression(display);
-            var result = e.Evaluate();
-            display = result.ToString();
-        }
-        catch
-        {
-            display = "Error";
-        }
     }
 }

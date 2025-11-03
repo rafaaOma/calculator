@@ -21,7 +21,6 @@
     width: 100%;
     padding: 1.5vh 0.5vw;
     background-color: rgba(155, 47, 255, 0.61);
-    /* color:rgba(240, 248, 255, 0.845); */
     font-size: 19px;
     font-weight: bold;
 }
@@ -48,4 +47,9 @@
 .number{
     background-color: rgba(188, 116, 255, 0.822);
     font-weight: bold;
+}
+.error-toast{
+    color:red;
+    z-index: 10;
+    white-space: pre-line; 
 }

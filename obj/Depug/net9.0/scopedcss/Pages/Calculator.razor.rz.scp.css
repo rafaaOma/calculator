@@ -15,16 +15,7 @@
     background-image: url("/calc_background.jpg");
     border-radius: 5px;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.39);
-}
-.body[b-k4va7lqwqr]::before{
-    content: "";
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(134, 18, 18, 0.8);
-    z-index: -1;
+    /* margin-left: 50vw; */
 }
 .display[b-k4va7lqwqr]{
     width: 100%;

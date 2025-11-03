@@ -200,6 +200,8 @@ C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtim
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
+C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\simpleCalculator.7la2ixl19n.wasm
+C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\simpleCalculator.hoaos0uomi.pdb
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\blazor.webassembly.js.gz
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.phaa9r44xv.wasm.gz
@@ -403,6 +405,8 @@ C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtim
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat.gz
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
+C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\simpleCalculator.7la2ixl19n.wasm.gz
+C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\simpleCalculator.hoaos0uomi.pdb.gz
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json.gz
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\simpleCalculator.staticwebassets.runtime.json
 C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\simpleCalculator.staticwebassets.endpoints.json
@@ -616,6 +620,7 @@ C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\simpleCalculator.AssemblyInfoInp
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\simpleCalculator.AssemblyInfo.cs
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\simpleCalculator.csproj.CoreCompileInputs.cache
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\simpleCalculator.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\simpleCalculator.sourcelink.json
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Authorization.wasm
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Components.wasm
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\webcil\Microsoft.AspNetCore.Components.Forms.wasm
@@ -867,6 +872,8 @@ C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\gd0q7tcwgr-63fj8s7r0e
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\sc4yaf4rbb-2teh2pra41.gz
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\3ndpoe2525-iag0ou56lh.gz
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\lk8g38qxpm-md9yvkcqlf.gz
+C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\3tqac2xft9-0rct9jqmvu.gz
+C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\ttjk6w5vpl-0rct9jqmvu.gz
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\tromt5xcyy-phaa9r44xv.gz
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\sfbn8m11be-4o2vz6uw5j.gz
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\gw0dvh056k-1ddspp16i2.gz
@@ -1068,6 +1075,9 @@ C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\777jfhs37q-ctf2q9h8m2
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\tutrjc1hvp-tjcz0u77k5.gz
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\sv6cut0ukn-tptq2av103.gz
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\23dlpp6saf-lfu7j35m59.gz
+C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\bvi78lfigu-7la2ixl19n.gz
+C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\76x55mk6gh-hoaos0uomi.gz
+C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\2l2e0cymf2-cuex0szzrq.gz
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\staticwebassets.development.json
@@ -1077,12 +1087,3 @@ C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\simpleCalculator.dll
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\refint\simpleCalculator.dll
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\simpleCalculator.pdb
 C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\ref\simpleCalculator.dll
-C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\simpleCalculator.blsa8nudv0.wasm
-C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\simpleCalculator.sktgosxlrh.pdb
-C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\simpleCalculator.blsa8nudv0.wasm.gz
-C:\Users\rafa\simpleCalculator\bin\Debug\net9.0\wwwroot\_framework\simpleCalculator.sktgosxlrh.pdb.gz
-C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\3tqac2xft9-y4ce2g8yum.gz
-C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\ttjk6w5vpl-y4ce2g8yum.gz
-C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\bvi78lfigu-blsa8nudv0.gz
-C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\76x55mk6gh-sktgosxlrh.gz
-C:\Users\rafa\simpleCalculator\obj\Debug\net9.0\compressed\2l2e0cymf2-qu3g7i6do2.gz
