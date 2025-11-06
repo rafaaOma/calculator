@@ -244,14 +244,14 @@ main[b-8n538rc3nm] {
 /* tablets min width 601 - max-with 1024 */
 @media (min-width: 601px) and (max-width: 1024px){
     .container[b-k4va7lqwqr]{
-position:relative;
-height: fit-content;
-width: fit-content;
+    position:relative;
+    height: fit-content;
+    width: fit-content;
     display:flex;
-  align-items: center;
-  justify-content:center;
-  padding-left: 20vw;
-    }
+    align-items: center;
+    justify-content:center;
+    padding-left: 20vw;
+}
     .Calculator[b-k4va7lqwqr]{
     position: absolute;
     margin-top: 40vh;
@@ -264,4 +264,40 @@ width: fit-content;
     width:40vw;
     margin-right:40%;
 }
+}
+/* /Pages/History.razor.rz.scp.css */
+.history-container[b-st3ealkzm5]{
+    position: relative;
+    margin-top:20px;   
+    padding: 2px;
+    border:1px solid ;
+    border-radius:10px;
+    height:fit-content;
+    width:50vw;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    background-color: rgba(120, 13, 220, 0.347);
+}
+.clear-button[b-st3ealkzm5]{
+    height:fit-content;
+    width:fit-content;
+    padding:5px;
+    align-self: flex-end;
+    font-size: 1em;
+    margin: 2vh 2vh 0 0;
+    background-color: rgba(128, 128, 128, 0.527);
+}
+hr[b-st3ealkzm5]{
+    width:50vw;
+    border:1px solid rgb(107, 106, 106);
+    margin-top: 0.5vh;
+    margin-left: -0.15vw;
+}
+li[b-st3ealkzm5]{
+    list-style-type:disc;
+    padding:10px 0px 10px 0px;
+    border-bottom: 1px solid rgba(160, 158, 158, 0.459);
+    width: 60%;
+    font-size: 1.1em;
 }

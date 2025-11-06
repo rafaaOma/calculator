@@ -81,14 +81,14 @@
 /* tablets min width 601 - max-with 1024 */
 @media (min-width: 601px) and (max-width: 1024px){
     .container[b-k4va7lqwqr]{
-position:relative;
-height: fit-content;
-width: fit-content;
+    position:relative;
+    height: fit-content;
+    width: fit-content;
     display:flex;
-  align-items: center;
-  justify-content:center;
-  padding-left: 20vw;
-    }
+    align-items: center;
+    justify-content:center;
+    padding-left: 20vw;
+}
     .Calculator[b-k4va7lqwqr]{
     position: absolute;
     margin-top: 40vh;

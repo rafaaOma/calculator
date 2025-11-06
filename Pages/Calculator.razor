@@ -1,7 +1,9 @@
 @using System.Linq.Expressions
 @using NCalc;
 @using System
+@inject simpleCalculator.Data.CalculatorService CalcState
 @page "/calculator"
+
 <div class="container">
      @if (!string.IsNullOrEmpty(erorrMassage)) //checking errorMassage fild has error massage
     {
@@ -44,35 +46,35 @@
         {
             if (string.IsNullOrWhiteSpace(display) ||
             System.Text.RegularExpressions.Regex.IsMatch(display, @"[+\-*/]{2,}") ||
-            display.StartsWith("+") || display.StartsWith("-") ||
+            display.StartsWith("+") ||
             display.StartsWith("*") || display.StartsWith("/") ||
             display.EndsWith("+") || display.EndsWith("-") ||
             display.EndsWith("*") || display.EndsWith("/")) //chikeing wrong ex with -- or ++ or it ends with - or +
+                {
+                await  ShowError("Invalid expression.");
+                    return;
+                }
+            object? result = null;
+                try
+                {
+                    var e = new NCalc.Expression(display);
+                    result = e.Evaluate();
+                     CalcState.AddToHistory(display, result.ToString());//adding calculation to history list
+                }
+            catch (Exception ex)
             {
-              await  ShowError("Invalid expression.");
+                Console.WriteLine("NCalc Error: " + ex.Message);
+                await ShowError("Calculation error.\nPlease check your input.");
                 return;
             }
-            object? result = null;
-        try
-        {
-            var e = new NCalc.Expression(display);
-            result = e.Evaluate();
+            display = result?.ToString() ?? "0";
+            
         }
         catch (Exception ex)
         {
-            Console.WriteLine("NCalc Error: " + ex.Message);
-            await ShowError("Calculation error.\nPlease check your input.");
-            return;
+            Console.WriteLine("General Error: " + ex.Message);
+            await ShowError("Unexpected error.\nPlease try again.");
         }
-
-        display = result?.ToString() ?? "0";
-    }
-     catch (Exception ex)
-    {
-        // أي خطأ عام (خارج NCalc)
-        Console.WriteLine("General Error: " + ex.Message);
-        await ShowError("Unexpected error.\nPlease try again.");
-    }
     }
       private async Task ShowError(string message)
     {

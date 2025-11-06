@@ -1,0 +1,22 @@
+@page "/History"
+@inject simpleCalculator.Data.CalculatorService CalcState
+<h3>Calculation History</h3>
+<div class="history-container">
+        <button class="clear-button" @onclick="() => CalcState.History.Clear()">Clear History</button>
+        <hr>
+    <div class="history-list">
+        @if (CalcState.History.Count == 0) //checking if history list is empty
+        {
+            <p>No calculations yet.</p>
+        }
+        else
+        {
+            <ul>
+                @foreach (var item in CalcState.History)//if there are items, present history list items
+                {
+                    <li>@item</li>
+                }
+            </ul>
+        }
+    </div>
+</div>
